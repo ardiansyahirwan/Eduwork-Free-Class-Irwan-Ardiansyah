@@ -1,0 +1,161 @@
+* {
+   --primary-color: #4DB7FE;
+}
+
+/* Studi Kasus 1 */
+.bg-cyan {
+   background-color: rgb(160, 253, 253);
+}
+
+.vh-100 {
+   height: 100vh;
+}
+
+.card {
+   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.p-top-140 {
+   padding-top: 10rem;
+}
+
+.fw-700 {
+   font-weight: 700;
+}
+
+.fw-600 {
+   font-weight: 600;
+}
+
+/* End Studi Kasus 1 */
+
+
+/* Studi Kasus 2 */
+.bg-pink {
+   background-color: pink;
+}
+
+.text-justify {
+   text-align: justify;
+}
+
+.content {
+   background-color: #ddd;
+   height: 200px;
+}
+
+.p-bottom-5 {
+   padding-bottom: 5rem;
+}
+
+/* End Studi Kasus 2 */
+
+/* Tugas Bootstrap */
+body#tugas-bs {
+   font-family: 'Quicksand', sans-serif;
+}
+
+.font-blue {
+   color: var(--primary-color);
+   font-size: 18px;
+}
+
+#tugas-bs .navbar-brand img {
+   height: 30px;
+   width: 173.9px;
+}
+
+#tugas-bs nav .nav-link {
+   padding: 10px 20px;
+   font-weight: 800;
+   font-size: 13px;
+}
+
+#tugas-bs nav .nav-link:hover {
+   color: var(--primary-color);
+}
+
+#tugas-bs nav .nav-link.active {
+   color: var(--primary-color);
+}
+
+.dropdown-menu .dropdown-item {
+   font-size: 13px;
+   font-weight: 500;
+}
+
+.btn-regist {
+   background-color: var(--primary-color);
+   color: white !important;
+   border-radius: 30px;
+}
+
+.carousel-inner {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+}
+
+.caption {
+   position: absolute;
+   z-index: 3;
+   top: 40%;
+   left: 15%;
+}
+
+.caption-text {
+   color: white;
+   font-size: 54px;
+}
+
+.caption-text span {
+   font-weight: 500;
+   font-size: 40px;
+}
+
+.caption-button {
+   margin-top: 30px;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #007eff;
+   opacity: 0.75;
+   z-index: 2;
+}
+
+.btn-hero {
+   color: white;
+   background-color: #04436D;
+   font-size: 20px;
+   border-radius: 30px;
+}
+
+.btn-hero:hover {
+   color: wheat;
+}
+
+#main {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.icon-content {
+   color: var(--primary-color);
+}
+
+.text-gray {
+   font-size: 16px;
+   color: #878c9f;
+   font-weight: 500;
+   text-align: left;
+}
+
+/* End Tugas Bootstrap */
