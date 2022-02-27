@@ -19,21 +19,24 @@
       </form>
    </pre>
    <?php
-   $beratBadan = $_POST['beratBadan'];
-   $tinggiBadan = $_POST['tinggiBadan'];
-   $nama = $_POST['nama'];
-
-   $tinggiDalamMeter = $tinggiBadan / 100;
-   $hasilBmi = $beratBadan / ($tinggiDalamMeter * $tinggiDalamMeter);
-   $hasilBmi = round($hasilBmi, 1);
-   if ($hasilBmi < 18.5) {
-      echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Kekurangan Berat Badan";
-   } else if ($hasilBmi < 25.0) {
-      echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Normal (Ideal)";
-   } else if ($hasilBmi < 30.0) {
-      echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Kelebihan Berat Badan";
+   if (isset($_POST['beratBadan']) && isset($_POST['tinggiBadan']) && isset($_POST['nama'])) {
+      $beratBadan = $_POST['beratBadan'];
+      $tinggiBadan = $_POST['tinggiBadan'];
+      $nama = $_POST['nama'];
+      $tinggiDalamMeter = $tinggiBadan / 100;
+      $hasilBmi = $beratBadan / ($tinggiDalamMeter * $tinggiDalamMeter);
+      $hasilBmi = round($hasilBmi, 1);
+      if ($hasilBmi < 18.5) {
+         echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Kekurangan Berat Badan";
+      } else if ($hasilBmi < 25.0) {
+         echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Normal (Ideal)";
+      } else if ($hasilBmi < 30.0) {
+         echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Kelebihan Berat Badan";
+      } else {
+         echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Kegemukan (Obesitas) ";
+      }
    } else {
-      echo "halo, $nama. Nilai BMI anda adalah $hasilBmi , anda termasuk Kegemukan (Obesitas) ";
+      echo "nilai Belum dimasukkan";
    }
    ?>
 </body>
